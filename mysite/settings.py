@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'DjangoUeditor',
 ]
 
 LOGGING = {
@@ -104,7 +105,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test',
         'USER': 'root',
-        'PASSWORD': 'cqupt',
+        'PASSWORD': '123456',
         'HOST': '', #填空默认为主机
         'PORT': '3306'
 
@@ -135,7 +136,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 #LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'zh-hans'
-
+#TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/Chongqing'
 
 USE_I18N = True
@@ -151,8 +152,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
         os.path.join(BASE_DIR,'static'),
-        os.path.join(BASE_DIR,'blog',''),
+        os.path.join(BASE_DIR,'blog/','static'),
         )
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+
 #session 配置 默认存在数据库表django_session中
 #SESSION_ENGINE = 'django.contrib,sessions,backends.db'#默认引擎
 #SESSION_COOKIE_NAME = 'sessionid' #key value为随机值
