@@ -14,3 +14,15 @@ def orm(request):
     print(request.GET)
     print(request.COOKIES)
     return HttpResponse('orm')
+
+def index(request):
+    sitename = 'Django blog 展示网站'
+    url = 'www.django.cn'
+    #把变量封装到上下文
+    context = {
+            'sitename':sitename,
+            'url':url,
+            }
+    #传递到模板中
+    return render(request,'index.html',context)
+

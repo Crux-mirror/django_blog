@@ -105,7 +105,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test',
         'USER': 'root',
-        'PASSWORD': '123456',
+        'PASSWORD': 'cqupt',
         'HOST': '', #填空默认为主机
         'PORT': '3306'
 

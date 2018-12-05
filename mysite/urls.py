@@ -21,6 +21,7 @@ from django.views.static import serve
 #导入配置文件里的文件上传配置
 from django.conf import settings
 urlpatterns = [
+    path('',views.index),
     path('admin/', admin.site.urls),
     path('index',views.hello),
     path('orm/',views.orm),
