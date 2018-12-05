@@ -7,5 +7,18 @@
     <body>
         <h3>网站名：{{sitename}}</h3>
         <h3>域名：{{url}}</h3>
+        <div>
+            <ul>
+                <h4>Blog教程目录:</h4>
+                {% for list in list %}
+                <li>{{ list }}</li>
+                {% endfor %}
+                <h4>
+                    {%  for key,values in mydict.items %}
+                    <li>{{key}} :{{values}}</li>
+                    {% endfor %}
+                </h4>
+            </ul>
+        </div>
     </body>
 </html>
