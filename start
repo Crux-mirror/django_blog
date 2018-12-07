@@ -1,0 +1,2 @@
+nohup uwsgi -x mysite.xml &
+echo "django begin..."

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'test',
     'DjangoUeditor',
 ]
 
@@ -105,9 +106,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test',
         'USER': 'root',
-        'PASSWORD': '123456',
+        #'PASSWORD': '123456',
         'HOST': '', #填空默认为主机
-        'PORT': '3306'
+        'PORT': '3306',
+        'PASSWORD':'cqupt',
 
     }
     }

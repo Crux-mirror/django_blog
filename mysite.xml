@@ -1,0 +1,8 @@
+<uwsgi>
+    <socket>127.0.0.1:8999</socket> <!--内部端口-->
+    <chdir>/usr/local/pyproject/django/mysite/</chdir>
+    <module>mysite.wsgi:application</module>
+    <processes>4</processes><!--进程数-->
+    <deamonize>uwsgi.log</deamonize><!--日志文件-->
+
+</uwsgi>
